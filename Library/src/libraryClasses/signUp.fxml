@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/24.0.1" fx:controller="mysmartlibrary.SignUpController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="602.0">
+         <children>
+            <VBox layoutX="3.0" layoutY="3.0" prefHeight="394.0" prefWidth="593.0" style="-fx-background-color: #FFF8DC;">
+               <children>
+                  <HBox prefHeight="70.0" prefWidth="594.0">
+                     <children>
+                        <Label fx:id="niceLabel" alignment="CENTER" prefHeight="74.0" prefWidth="594.0" text="HAVE A NICE READING" textAlignment="CENTER" textFill="BROWN">
+                           <font>
+                              <Font name="Calibri Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="67.0" prefWidth="594.0">
+                     <children>
+                        <Label fx:id="firstNameLabel" text="First Name : " textFill="#b1644b">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="firstNameField" prefHeight="28.0" prefWidth="166.0">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="15.0" />
+                           </font>
+                        </TextField>
+                        <Label fx:id="lastNameLabel" text="Last Name : " textAlignment="CENTER" textFill="#b1644b">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="lastNamefield">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="15.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="52.0" prefWidth="594.0">
+                     <children>
+                        <Label fx:id="EmailLabelsignup" text="Email : " textFill="#b1644b">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="EmailFieldsignup">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="15.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="66.0" prefWidth="594.0">
+                     <children>
+                        <Label fx:id="passwordLabelsignup" text="Password : " textFill="#b1644b">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="passwordFieldsignup">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="15.0" />
+                           </font>
+                        </PasswordField>
+                        <Label fx:id="confirmLabel" text="Confirm Password : " textFill="#b1644b">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Label>
+                        <PasswordField fx:id="confirmField">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="15.0" />
+                           </font>
+                        </PasswordField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="SignUpButton" mnemonicParsing="false" onAction="#handleSignupButtonPage" text="SIGN UP" textFill="#943a21">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="35.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
